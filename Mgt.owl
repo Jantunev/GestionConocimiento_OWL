@@ -1,0 +1,297 @@
+@prefix : <https://mtg.gamepedia.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://mtg.gamepedia.com/> .
+
+<https://mtg.gamepedia.com/> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://mtg.gamepedia.com/color
+:color rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :hasCharacteristic ,
+                          :isCharacteristic .
+
+
+###  https://mtg.gamepedia.com/flavor
+:flavor rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :hasCharacteristic ,
+                           :isCharacteristic .
+
+
+###  https://mtg.gamepedia.com/hasCharacteristic
+:hasCharacteristic rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://mtg.gamepedia.com/isCharacteristic
+:isCharacteristic rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://mtg.gamepedia.com/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :hasCharacteristic ,
+                         :isCharacteristic .
+
+
+###  https://mtg.gamepedia.com/power
+:power rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :hasCharacteristic ,
+                          :isCharacteristic .
+
+
+###  https://mtg.gamepedia.com/tougthness
+:tougthness rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :hasCharacteristic ,
+                               :isCharacteristic .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://mtg.gamepedia.com/Adventure
+:Adventure rdf:type owl:Class ;
+           rdfs:subClassOf :Instant ,
+                           :Sorcery .
+
+
+###  https://mtg.gamepedia.com/Angel
+:Angel rdf:type owl:Class ;
+       rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Arcane
+:Arcane rdf:type owl:Class ;
+        rdfs:subClassOf :Instant ,
+                        :Sorcery .
+
+
+###  https://mtg.gamepedia.com/Artifact
+:Artifact rdf:type owl:Class ;
+          rdfs:subClassOf :spell .
+
+
+###  https://mtg.gamepedia.com/Artificier
+:Artificier rdf:type owl:Class ;
+            rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Aura
+:Aura rdf:type owl:Class ;
+      rdfs:subClassOf :Enchantment ;
+      owl:disjointWith :Engineered .
+
+
+###  https://mtg.gamepedia.com/Avatar
+:Avatar rdf:type owl:Class ;
+        rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/BasicLand
+:BasicLand rdf:type owl:Class ;
+           rdfs:subClassOf :land ;
+           owl:disjointWith :NonBasicLand .
+
+
+###  https://mtg.gamepedia.com/Cleric
+:Cleric rdf:type owl:Class ;
+        rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Clue
+:Clue rdf:type owl:Class ;
+      rdfs:subClassOf :Artifact .
+
+
+###  https://mtg.gamepedia.com/Creature
+:Creature rdf:type owl:Class ;
+          rdfs:subClassOf :spell .
+
+
+###  https://mtg.gamepedia.com/Elf
+:Elf rdf:type owl:Class ;
+     rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Enchantment
+:Enchantment rdf:type owl:Class ;
+             rdfs:subClassOf :spell .
+
+
+###  https://mtg.gamepedia.com/Engineered
+:Engineered rdf:type owl:Class ;
+            rdfs:subClassOf :Enchantment .
+
+
+###  https://mtg.gamepedia.com/Equipment
+:Equipment rdf:type owl:Class ;
+           rdfs:subClassOf :Artifact .
+
+
+###  https://mtg.gamepedia.com/Food
+:Food rdf:type owl:Class ;
+      rdfs:subClassOf :Artifact .
+
+
+###  https://mtg.gamepedia.com/Forest
+:Forest rdf:type owl:Class ;
+        rdfs:subClassOf :BasicLand .
+
+
+###  https://mtg.gamepedia.com/Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Instant
+:Instant rdf:type owl:Class ;
+         rdfs:subClassOf :spell .
+
+
+###  https://mtg.gamepedia.com/Island
+:Island rdf:type owl:Class ;
+        rdfs:subClassOf :BasicLand .
+
+
+###  https://mtg.gamepedia.com/MagicTheWizard
+:MagicTheWizard rdf:type owl:Class .
+
+
+###  https://mtg.gamepedia.com/Masticore
+:Masticore rdf:type owl:Class ;
+           rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Mountain
+:Mountain rdf:type owl:Class ;
+          rdfs:subClassOf :BasicLand .
+
+
+###  https://mtg.gamepedia.com/NonBasicLand
+:NonBasicLand rdf:type owl:Class ;
+              rdfs:subClassOf :land .
+
+
+###  https://mtg.gamepedia.com/Non_Permanent
+:Non_Permanent rdf:type owl:Class ;
+               rdfs:subClassOf :Permanence ;
+               owl:disjointWith :Permanent .
+
+
+###  https://mtg.gamepedia.com/Permanence
+:Permanence rdf:type owl:Class ;
+            rdfs:subClassOf :MagicTheWizard .
+
+
+###  https://mtg.gamepedia.com/Permanent
+:Permanent rdf:type owl:Class ;
+           rdfs:subClassOf :Permanence .
+
+
+###  https://mtg.gamepedia.com/Plains
+:Plains rdf:type owl:Class ;
+        rdfs:subClassOf :BasicLand .
+
+
+###  https://mtg.gamepedia.com/Plant
+:Plant rdf:type owl:Class ;
+       rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Skeleton
+:Skeleton rdf:type owl:Class ;
+          rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Sorcery
+:Sorcery rdf:type owl:Class ;
+         rdfs:subClassOf :spell .
+
+
+###  https://mtg.gamepedia.com/Swamp
+:Swamp rdf:type owl:Class ;
+       rdfs:subClassOf :BasicLand .
+
+
+###  https://mtg.gamepedia.com/Thrull
+:Thrull rdf:type owl:Class ;
+        rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/Trap
+:Trap rdf:type owl:Class ;
+      rdfs:subClassOf :Instant ,
+                      :Sorcery .
+
+
+###  https://mtg.gamepedia.com/Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf :Artifact .
+
+
+###  https://mtg.gamepedia.com/Wizard
+:Wizard rdf:type owl:Class ;
+        rdfs:subClassOf :Creature .
+
+
+###  https://mtg.gamepedia.com/land
+:land rdf:type owl:Class ;
+      rdfs:subClassOf :MagicTheWizard .
+
+
+###  https://mtg.gamepedia.com/spell
+:spell rdf:type owl:Class ;
+       rdfs:subClassOf :MagicTheWizard .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Adventure
+                :Arcane
+                :Trap
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Artifact
+                :Creature
+                :Enchantment
+                :Instant
+                :Sorcery
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BasicLand
+                :Forest
+                :Island
+                :Mountain
+                :NonBasicLand
+                :Plains
+                :Swamp
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Clue
+                :Equipment
+                :Food
+                :Vehicle
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
