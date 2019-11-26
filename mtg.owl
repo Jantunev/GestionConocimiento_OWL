@@ -845,10 +845,19 @@
         <DataProperty IRI="#abilities"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#black"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blue"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#card_name"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#flavor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#green"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#mana_cost"/>
@@ -857,7 +866,13 @@
         <DataProperty IRI="#power"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#red"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#toughness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#white"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#12944"/>
@@ -2324,12 +2339,24 @@ All creatures of the chosen type get -1/-1.</Literal>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#black"/>
+        <DataProperty IRI="#mana_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#blue"/>
+        <DataProperty IRI="#mana_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#card_name"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#flavor"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#green"/>
+        <DataProperty IRI="#mana_cost"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#mana_cost"/>
@@ -2340,35 +2367,83 @@ All creatures of the chosen type get -1/-1.</Literal>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#red"/>
+        <DataProperty IRI="#mana_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#toughness"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#white"/>
+        <DataProperty IRI="#mana_cost"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#abilities"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#black"/>
+        <Class IRI="#Spell"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blue"/>
+        <Class IRI="#Spell"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#card_name"/>
         <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#green"/>
+        <Class IRI="#Spell"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#power"/>
         <Class IRI="#Creature"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#red"/>
+        <Class IRI="#Spell"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#toughness"/>
         <Class IRI="#Creature"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#white"/>
+        <Class IRI="#Spell"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#black"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#card_name"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#green"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#power"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#red"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#toughness"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#white"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
 </Ontology>
