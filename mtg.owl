@@ -6,11 +6,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://pucp.edu.pe/mtg.owl">
-    <Prefix name="" IRI="http://pucp.edu.pe/mtg.owl"/>
+    <Prefix name="" IRI="http://pucp.edu.pe/mtg.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="#Adventure"/>
@@ -428,6 +429,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Locus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MagicTheGathering_Objects"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Manticore"/>
@@ -1437,6 +1441,10 @@
         <Class IRI="#Creature"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Land"/>
+        <Class IRI="#MagicTheGathering_Objects"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Leech"/>
         <Class IRI="#Creature"/>
     </SubClassOf>
@@ -1803,6 +1811,10 @@
     <SubClassOf>
         <Class IRI="#Specter"/>
         <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spell"/>
+        <Class IRI="#MagicTheGathering_Objects"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Spellshaper"/>
