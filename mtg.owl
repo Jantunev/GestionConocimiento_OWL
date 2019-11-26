@@ -845,25 +845,10 @@
         <DataProperty IRI="#abilities"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#black"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#blue"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#card_name"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#color"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#colorless"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#flavor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#green"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#mana_cost"/>
@@ -872,25 +857,67 @@
         <DataProperty IRI="#power"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#red"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#toughness"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#white"/>
+        <NamedIndividual IRI="#12944"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#150498"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#150663"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#158969"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#165565"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#202437"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#22318"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#23040"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#260729"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#260766"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#265091"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#370232"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#378372"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#383058"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#391664"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#423359"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#430355"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#443459"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#447132"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#447191"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#456536"/>
@@ -902,7 +929,34 @@
         <NamedIndividual IRI="#464065"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#464465"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#464482"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#464573"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#464682"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#466855"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#473758"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#473762"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#473766"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#476129"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#87129"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Adventure"/>
@@ -2078,23 +2132,29 @@
     </ClassAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal>flying;(condition)phyrexian slayer becomes blocked by a white creature, destroy that creature. it can’t be regenerated</Literal>
+        <NamedIndividual IRI="#12944"/>
+        <Literal>As Engineered Plague enters the battlefield, choose a creature type.
+All creatures of the chosen type get -1/-1.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#black"/>
+        <DataProperty IRI="#card_name"/>
+        <NamedIndividual IRI="#12944"/>
+        <Literal>Engineered Plague</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#card_name"/>
+        <NamedIndividual IRI="#150498"/>
+        <Literal>Terror</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abilities"/>
         <NamedIndividual IRI="#23040"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal>flying;(condition)phyrexian slayer becomes blocked by a white creature, destroy that creature. it can’t be regenerated</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#card_name"/>
         <NamedIndividual IRI="#23040"/>
         <Literal>Phyrexian Slayer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#power"/>
@@ -2117,11 +2177,6 @@
         <Literal>Radiant, Archangel</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#power"/>
         <NamedIndividual IRI="#383058"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
@@ -2132,11 +2187,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#white"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#abilities"/>
         <NamedIndividual IRI="#430355"/>
         <Literal>(cost tap)add(1 green mana) for each elf on the battlefield</Literal>
@@ -2145,16 +2195,6 @@
         <DataProperty IRI="#card_name"/>
         <NamedIndividual IRI="#430355"/>
         <Literal>Priest of Titania</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#430355"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#green"/>
-        <NamedIndividual IRI="#430355"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#power"/>
@@ -2172,11 +2212,6 @@
         <Literal>counter target spell</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#blue"/>
-        <NamedIndividual IRI="#447132"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#card_name"/>
         <NamedIndividual IRI="#447132"/>
         <Literal>Counterspell</Literal>
@@ -2192,11 +2227,6 @@
         <Literal>Serra Angel</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#456536"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#power"/>
         <NamedIndividual IRI="#456536"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
@@ -2207,29 +2237,14 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#white"/>
-        <NamedIndividual IRI="#456536"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#abilities"/>
         <NamedIndividual IRI="#464024"/>
         <Literal>when urza, lord high artificer enters the battlefield, create a 0/0 colorless construct artifact creature token with “this creature gets +1/+1 for each artifact you control;cost(tap an untapped artifact you control): add(1 blue mana);cost(1 blue mana, shuffle your library, exile the top card): until end of turn, you may play that card without paying its mana cost</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#blue"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#card_name"/>
         <NamedIndividual IRI="#464024"/>
         <Literal>Urza, Lord High Artificer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#power"/>
@@ -2247,19 +2262,9 @@
         <Literal>protection(from Humans);pay 1 life, sacrifice another creature: Put a -1/-1 counter on up to one target creature and draw a card;(cost 2 black mana,discard 1 card)proliferate</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#black"/>
-        <NamedIndividual IRI="#464065"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#card_name"/>
         <NamedIndividual IRI="#464065"/>
         <Literal>Yawgmoth, Thran Physician</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#464065"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#power"/>
@@ -2319,34 +2324,14 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#black"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#blue"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#card_name"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#color"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#colorless"/>
-        <DataProperty IRI="#mana_cost"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#flavor"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#green"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#mana_cost"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -2355,91 +2340,35 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#red"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#toughness"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#white"/>
-        <DataProperty IRI="#mana_cost"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#abilities"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#black"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#blue"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#card_name"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#colorless"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#green"/>
-        <Class IRI="#Spell"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#power"/>
         <Class IRI="#Creature"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#red"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#toughness"/>
         <Class IRI="#Creature"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#white"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#black"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#blue"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#card_name"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#colorless"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#green"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#power"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#red"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#toughness"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#white"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
 </Ontology>
