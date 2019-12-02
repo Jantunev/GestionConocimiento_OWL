@@ -1,2600 +1,2880 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://pucp.edu.pe/mtg.owl#"
      xml:base="http://pucp.edu.pe/mtg.owl"
+     xmlns:ns1="http://pucp.edu.pe/mtg.owl#"
+     xmlns:ns2="http://www.w3.org/2001/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://pucp.edu.pe/mtg.owl">
-    <Prefix name="" IRI="http://pucp.edu.pe/mtg.owl#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#Adventure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Advisor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Aetherborn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ally"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Angel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Antelope"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ape"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Arcane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Archer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Archon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Artifact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Artificer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Assassin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Assembly-Worker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Atog"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Aura"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Aurochs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Avatar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Azra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Badger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Barbarian"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Basic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Basilisk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bear"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Beast"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Beeble"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Berserker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bird"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Blinkmoth"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Boar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bringer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Brushwagg"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Camarid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Camel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Caribou"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Carrier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cartouche"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Centaur"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cephalid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Chimera"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Citizen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cleric"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Clue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cockatrice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Construct"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Contraption"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Coward"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Crab"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Creature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Crocodile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Curse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cyclops"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dauthi"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Demon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Desert"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Deserter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Devil"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dinosaur"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Djinn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dragon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Drake"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dreadnought"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Drone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Druid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dryad"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dwarf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Efreet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Egg"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Elder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Eldrazi"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Elemental"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Elephant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Elf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Elk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Enchantment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Equipment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Eye"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Faerie"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ferret"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flagbearer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Food"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fortification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fox"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Frog"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fungus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gargoyle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Germ"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Giant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gnome"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Goat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Goblin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#God"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Golem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gorgon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Graveborn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gremlin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Griffin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hag"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Harpy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hellion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hippo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hippogriff"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Homarid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Homunculus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Horror"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Horse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hound"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Human"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hydra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hyena"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Illusion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Imp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Incarnation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Insect"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Instant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Jackal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Jellyfish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Juggernaut"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kavu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kirin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kithkin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Knight"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kobold"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kraken"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lair"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamia"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lammasu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Land"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Leech"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Leviathan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lhurgoyf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Licid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lizard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Locus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MagicTheGathering_Objects"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Manticore"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Masticore"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mercenary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Merfolk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Metathran"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Minion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Minotaur"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mole"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Monger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mongoose"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Monk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Monkey"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Moonfolk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mutant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Myr"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mystic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Naga"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nautilus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nephilim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nightmare"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nightstalker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ninja"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Noggle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nomad"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nymph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Octopus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ogre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ooze"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Orb"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Orc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Orgg"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ouphe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ox"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Oyster"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pangolin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pegasus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pentavite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pest"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Phelddagrif"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Phoenix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pilot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pincher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pirate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Plant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Power-Plant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Praetor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Prism"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Processor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rabbit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rebel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Reflection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rhino"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rigger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rogue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Saga"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Salamander"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Samurai"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sand"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Saproling"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Satyr"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Scarecrow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Scion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Scorpion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Scout"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serpent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Servo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shaman"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shapeshifter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sheep"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shrine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Siren"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Skeleton"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Slith"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sliver"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Slug"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snake"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Soldier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Soltari"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sorcery"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spawn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Specter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spell"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spellshaper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sphinx"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spider"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spike"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spirit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Splinter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sponge"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Squid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Squirrel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Starfish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Surrakar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Survivor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tetravite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Thalakos"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Thopter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Thrull"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Trap"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Treasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Treefolk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Trilobite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Triskelavite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Troll"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Turtle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Unicorn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Urzas"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vampire"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vedalken"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vehicle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Viashino"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Volver"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Warrior"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Weird"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Werewolf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Whale"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wizard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wolf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wolverine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wombat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Worm"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wraith"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wurm"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Yeti"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Zombie"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Zubera"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#enchant"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#equip"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#fortify"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#abilities"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#black"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#blue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#card_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#colorless"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#flavor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#green"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#mana_cost"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#power"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#red"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#toughness"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#white"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#12944"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#150498"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#150663"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#158969"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#165565"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#202437"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#22318"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#23040"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#260729"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#260766"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#265091"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#370232"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#378372"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#383058"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#391664"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#423359"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#430355"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#443459"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#447132"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#447191"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#456536"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#464024"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#464065"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#464465"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#464482"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#464573"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#464682"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#466855"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#473758"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#473762"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#476129"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#87129"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#Adventure"/>
-        <Class IRI="#Instant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Adventure"/>
-        <Class IRI="#Sorcery"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Advisor"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Aetherborn"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ally"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Angel"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Antelope"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ape"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Arcane"/>
-        <Class IRI="#Instant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Arcane"/>
-        <Class IRI="#Sorcery"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Archer"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Archon"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Artifact"/>
-        <Class IRI="#Spell"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Artificer"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Assassin"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Assembly-Worker"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Atog"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Aura"/>
-        <Class IRI="#Enchantment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Aurochs"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Avatar"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Azra"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Badger"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Barbarian"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Basic"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Basilisk"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bat"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bear"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beast"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beeble"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Berserker"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bird"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Blinkmoth"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Boar"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bringer"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Brushwagg"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Camarid"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Camel"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Caribou"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Carrier"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cartouche"/>
-        <Class IRI="#Enchantment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cat"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Centaur"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cephalid"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Chimera"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citizen"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cleric"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Clue"/>
-        <Class IRI="#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cockatrice"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Construct"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Contraption"/>
-        <Class IRI="#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Coward"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Crab"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Creature"/>
-        <Class IRI="#Spell"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Crocodile"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Curse"/>
-        <Class IRI="#Enchantment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cyclops"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dauthi"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Demon"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Desert"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Deserter"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Devil"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dinosaur"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Djinn"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dragon"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Drake"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dreadnought"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Drone"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Druid"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dryad"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dwarf"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Efreet"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Egg"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Elder"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Eldrazi"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Elemental"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Elephant"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Elf"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Elk"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Enchantment"/>
-        <Class IRI="#Spell"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Equipment"/>
-        <Class IRI="#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Eye"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Faerie"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ferret"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fish"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Flagbearer"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Food"/>
-        <Class IRI="#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fortification"/>
-        <Class IRI="#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fox"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Frog"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fungus"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gargoyle"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gate"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Germ"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Giant"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gnome"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Goat"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Goblin"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#God"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Golem"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gorgon"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Graveborn"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gremlin"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Griffin"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hag"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Harpy"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hellion"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hippo"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hippogriff"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Homarid"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Homunculus"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Horror"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Horse"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hound"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Human"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hydra"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hyena"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Illusion"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Imp"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Incarnation"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Insect"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Instant"/>
-        <Class IRI="#Spell"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Jackal"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Jellyfish"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Juggernaut"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kavu"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kirin"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kithkin"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Knight"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kobold"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kor"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kraken"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lair"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lamia"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lammasu"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Land"/>
-        <Class IRI="#MagicTheGathering_Objects"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Leech"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Leviathan"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lhurgoyf"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Licid"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lizard"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Locus"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Manticore"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Masticore"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mercenary"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Merfolk"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Metathran"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mine"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Minion"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Minotaur"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mole"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Monger"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mongoose"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Monk"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Monkey"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Moonfolk"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mutant"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Myr"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mystic"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Naga"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nautilus"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nephilim"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nightmare"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nightstalker"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ninja"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Noggle"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nomad"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nymph"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Octopus"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ogre"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ooze"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Orb"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Orc"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Orgg"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ouphe"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ox"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Oyster"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pangolin"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pegasus"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pentavite"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pest"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Phelddagrif"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Phoenix"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pilot"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pincher"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pirate"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Plant"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Power-Plant"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Praetor"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Prism"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Processor"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rabbit"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rat"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rebel"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reflection"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rhino"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rigger"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rogue"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sable"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Saga"/>
-        <Class IRI="#Enchantment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Salamander"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Samurai"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sand"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Saproling"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Satyr"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Scarecrow"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Scion"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Scorpion"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Scout"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Serf"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Serpent"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Servo"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Shade"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Shaman"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Shapeshifter"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sheep"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Shrine"/>
-        <Class IRI="#Enchantment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Siren"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Skeleton"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Slith"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sliver"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Slug"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Snake"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Soldier"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Soltari"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sorcery"/>
-        <Class IRI="#Spell"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spawn"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Specter"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spell"/>
-        <Class IRI="#MagicTheGathering_Objects"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spellshaper"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sphinx"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spider"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spike"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spirit"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Splinter"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sponge"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Squid"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Squirrel"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Starfish"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Surrakar"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Survivor"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tetravite"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Thalakos"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Thopter"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Thrull"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tower"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Trap"/>
-        <Class IRI="#Instant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Treasure"/>
-        <Class IRI="#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Treefolk"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Trilobite"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Triskelavite"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Troll"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Turtle"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Unicorn"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Urzas"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vampire"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vedalken"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vehicle"/>
-        <Class IRI="#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Viashino"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Volver"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wall"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Warrior"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Weird"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Werewolf"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Whale"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wizard"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wolf"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wolverine"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wombat"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Worm"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wraith"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wurm"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Yeti"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Zombie"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Zubera"/>
-        <Class IRI="#Creature"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Adventure"/>
-        <Class IRI="#Arcane"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Adventure"/>
-        <Class IRI="#Arcane"/>
-        <Class IRI="#Trap"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Aura"/>
-        <Class IRI="#Cartouche"/>
-        <Class IRI="#Curse"/>
-        <Class IRI="#Saga"/>
-        <Class IRI="#Shrine"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Basic"/>
-        <Class IRI="#Desert"/>
-        <Class IRI="#Gate"/>
-        <Class IRI="#Lair"/>
-        <Class IRI="#Locus"/>
-        <Class IRI="#Mine"/>
-        <Class IRI="#Power-Plant"/>
-        <Class IRI="#Tower"/>
-        <Class IRI="#Urzas"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Clue"/>
-        <Class IRI="#Contraption"/>
-        <Class IRI="#Equipment"/>
-        <Class IRI="#Food"/>
-        <Class IRI="#Fortification"/>
-        <Class IRI="#Treasure"/>
-        <Class IRI="#Vehicle"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Enchantment"/>
-        <NamedIndividual IRI="#12944"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Instant"/>
-        <NamedIndividual IRI="#150498"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Minion"/>
-        <NamedIndividual IRI="#23040"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Angel"/>
-        <NamedIndividual IRI="#383058"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Druid"/>
-        <NamedIndividual IRI="#430355"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Elf"/>
-        <NamedIndividual IRI="#430355"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Instant"/>
-        <NamedIndividual IRI="#447132"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Angel"/>
-        <NamedIndividual IRI="#456536"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Artificer"/>
-        <NamedIndividual IRI="#464024"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Human"/>
-        <NamedIndividual IRI="#464024"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Cleric"/>
-        <NamedIndividual IRI="#464065"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Human"/>
-        <NamedIndividual IRI="#464065"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Thrull"/>
-        <NamedIndividual IRI="#466855"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Basic"/>
-        <NamedIndividual IRI="#473758"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Basic"/>
-        <NamedIndividual IRI="#473762"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Basic"/>
-        <NamedIndividual IRI="#476129"/>
-    </ClassAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#12944"/>
-        <Literal>As Engineered Plague enters the battlefield, choose a creature type.
-All creatures of the chosen type get -1/-1.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#black"/>
-        <NamedIndividual IRI="#12944"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#12944"/>
-        <Literal>Engineered Plague</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#12944"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#flavor"/>
-        <NamedIndividual IRI="#12944"/>
-        <Literal>The admixture of bitterwort in the viral brew has produced most favorable results.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#150498"/>
-        <Literal>destroy target nonartifact, nonblack creature. It can&apos;t be regenerated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#black"/>
-        <NamedIndividual IRI="#150498"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#150498"/>
-        <Literal>Terror</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#150498"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal>flying;(condition)phyrexian slayer becomes blocked by a white creature, destroy that creature. it can’t be regenerated</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#black"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal>Phyrexian Slayer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#power"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#toughness"/>
-        <NamedIndividual IRI="#23040"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal>flying;vigilance;radiant, archangel gets +1/+1 for each other creature with flying on the battlefield</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal>Radiant, Archangel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#power"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#toughness"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#white"/>
-        <NamedIndividual IRI="#383058"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#430355"/>
-        <Literal>(cost tap)add(1 green mana) for each elf on the battlefield</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#430355"/>
-        <Literal>Priest of Titania</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#power"/>
-        <NamedIndividual IRI="#430355"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#toughness"/>
-        <NamedIndividual IRI="#430355"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#447132"/>
-        <Literal>counter target spell</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#blue"/>
-        <NamedIndividual IRI="#447132"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#447132"/>
-        <Literal>Counterspell</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#456536"/>
-        <Literal>vigilance;flying</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#456536"/>
-        <Literal>Serra Angel</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#power"/>
-        <NamedIndividual IRI="#456536"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#toughness"/>
-        <NamedIndividual IRI="#456536"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal>when urza, lord high artificer enters the battlefield, create a 0/0 colorless construct artifact creature token with “this creature gets +1/+1 for each artifact you control;cost(tap an untapped artifact you control): add(1 blue mana);cost(1 blue mana, shuffle your library, exile the top card): until end of turn, you may play that card without paying its mana cost</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#blue"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal>Urza, Lord High Artificer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#power"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#toughness"/>
-        <NamedIndividual IRI="#464024"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#464065"/>
-        <Literal>protection(from Humans);pay 1 life, sacrifice another creature: Put a -1/-1 counter on up to one target creature and draw a card;(cost 2 black mana,discard 1 card)proliferate</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#464065"/>
-        <Literal>Yawgmoth, Thran Physician</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#power"/>
-        <NamedIndividual IRI="#464065"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#toughness"/>
-        <NamedIndividual IRI="#464065"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#466855"/>
-        <Literal>deathtouch</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#black"/>
-        <NamedIndividual IRI="#466855"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#466855"/>
-        <Literal>Feral Abomination</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#colorless"/>
-        <NamedIndividual IRI="#466855"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#flavor"/>
-        <NamedIndividual IRI="#466855"/>
-        <Literal>Urborg used to be lovely—scenic volcanoes, respectable lich lords. Since the Cabal came with their nightmares and thrulls, it&apos;s all gone to the worms.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#power"/>
-        <NamedIndividual IRI="#466855"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#toughness"/>
-        <NamedIndividual IRI="#466855"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#473758"/>
-        <Literal>add(1 black mana)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#473758"/>
-        <Literal>Swamp</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#473762"/>
-        <Literal>add(1 red mana)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#473762"/>
-        <Literal>Mountain</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#abilities"/>
-        <NamedIndividual IRI="#476129"/>
-        <Literal>add(1 green mana)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#card_name"/>
-        <NamedIndividual IRI="#476129"/>
-        <Literal>Forest</Literal>
-    </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#enchant"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#enchant"/>
-        <Class IRI="#Aura"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#equip"/>
-        <Class IRI="#Equipment"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#fortify"/>
-        <Class IRI="#Fortification"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#enchant"/>
-        <Class IRI="#Creature"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#equip"/>
-        <Class IRI="#Creature"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#fortify"/>
-        <Class IRI="#Land"/>
-    </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="#enchant"/>
-        <ObjectProperty IRI="#equip"/>
-        <ObjectProperty IRI="#fortify"/>
-    </DisjointObjectProperties>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#abilities"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#black"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#blue"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#card_name"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#colorless"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#flavor"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#green"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#mana_cost"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#power"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#red"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#toughness"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#white"/>
-        <DataProperty IRI="#mana_cost"/>
-    </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#abilities"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#black"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#blue"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#card_name"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#green"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#power"/>
-        <Class IRI="#Creature"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#red"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#toughness"/>
-        <Class IRI="#Creature"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#white"/>
-        <Class IRI="#Spell"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#black"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#blue"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#card_name"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#green"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#power"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#red"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#toughness"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#white"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-</Ontology>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://pucp.edu.pe/mtg.owl#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#enchant -->
+
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#enchant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
+        <rdfs:range rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#equip -->
+
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#equip">
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Equipment"/>
+        <rdfs:range rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#fortify -->
+
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#fortify">
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Fortification"/>
+        <rdfs:range rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#abilities -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#abilities">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#black -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#black">
+        <rdfs:subPropertyOf rdf:resource="http://pucp.edu.pe/mtg.owl#mana_cost"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+        <ns2:XMLSchema>integer</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#blue -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#blue">
+        <rdfs:subPropertyOf rdf:resource="http://pucp.edu.pe/mtg.owl#mana_cost"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+        <ns2:XMLSchema>integer</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#cardReference -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#cardReference">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#card_name -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#card_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <ns2:XMLSchema>string</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#colorless -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#colorless">
+        <rdfs:subPropertyOf rdf:resource="http://pucp.edu.pe/mtg.owl#mana_cost"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#flavor -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#flavor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#green -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#green">
+        <rdfs:subPropertyOf rdf:resource="http://pucp.edu.pe/mtg.owl#mana_cost"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+        <ns2:XMLSchema>integer</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#mana_cost -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#mana_cost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#power -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#power">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+        <ns2:XMLSchema>integer</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#red -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#red">
+        <rdfs:subPropertyOf rdf:resource="http://pucp.edu.pe/mtg.owl#mana_cost"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+        <ns2:XMLSchema>integer</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#toughness -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#toughness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+        <ns2:XMLSchema>integer</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#white -->
+
+    <owl:DatatypeProperty rdf:about="http://pucp.edu.pe/mtg.owl#white">
+        <rdfs:subPropertyOf rdf:resource="http://pucp.edu.pe/mtg.owl#mana_cost"/>
+        <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+        <ns2:XMLSchema>integer</ns2:XMLSchema>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Adventure -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Adventure">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Sorcery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Advisor -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Advisor">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Aetherborn -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Aetherborn">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ally -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ally">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Angel -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Angel">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Antelope -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Antelope">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ape -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ape">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Arcane -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Arcane">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Sorcery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Archer -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Archer">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Archon -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Archon">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Artifact -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Artifact">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Artificer -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Artificer">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Assassin -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Assassin">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Assembly-Worker -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Assembly-Worker">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Atog -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Atog">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Aura -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Aura">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Enchantment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Aurochs -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Aurochs">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Avatar -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Avatar">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Azra -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Azra">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Badger -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Badger">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Barbarian -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Barbarian">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Basic -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Basic">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Basilisk -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Basilisk">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Bat -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Bat">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Bear -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Bear">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Beast -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Beast">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Beeble -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Beeble">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Berserker -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Berserker">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Bird -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Bird">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Blinkmoth -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Blinkmoth">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Boar -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Boar">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Bringer -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Bringer">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Brushwagg -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Brushwagg">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Camarid -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Camarid">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Camel -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Camel">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Caribou -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Caribou">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Carrier -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Carrier">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Cartouche -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Cartouche">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Enchantment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Cat -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Cat">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Centaur -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Centaur">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Cephalid -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Cephalid">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Chimera -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Chimera">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Citizen -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Citizen">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Cleric -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Cleric">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Clue -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Clue">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Cockatrice -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Cockatrice">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Construct -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Construct">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Contraption -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Contraption">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Coward -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Coward">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Crab -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Crab">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Creature -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Creature">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Crocodile -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Crocodile">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Curse -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Curse">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Enchantment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Cyclops -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Cyclops">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Dauthi -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Dauthi">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Demon -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Demon">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Desert -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Desert">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Deserter -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Deserter">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Devil -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Devil">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Dinosaur -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Dinosaur">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Djinn -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Djinn">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Dragon -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Dragon">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Drake -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Drake">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Dreadnought -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Dreadnought">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Drone -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Drone">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Druid -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Druid">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Dryad -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Dryad">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Dwarf -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Dwarf">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Efreet -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Efreet">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Egg -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Egg">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Elder -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Elder">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Eldrazi -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Eldrazi">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Elemental -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Elemental">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Elephant -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Elephant">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Elf -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Elf">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Elk -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Elk">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Enchantment -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Enchantment">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Equipment -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Equipment">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Eye -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Eye">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Faerie -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Faerie">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ferret -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ferret">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Fish -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Fish">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Flagbearer -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Flagbearer">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Food -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Food">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Forest -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Forest">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Fortification -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Fortification">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Fox -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Fox">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Frog -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Frog">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Fungus -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Fungus">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Gargoyle -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Gargoyle">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Gate -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Gate">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Germ -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Germ">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Giant -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Giant">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Gnome -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Gnome">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Goat -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Goat">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Goblin -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Goblin">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#God -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#God">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Golem -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Golem">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Gorgon -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Gorgon">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Graveborn -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Graveborn">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Gremlin -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Gremlin">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Griffin -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Griffin">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Hag -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Hag">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Harpy -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Harpy">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Hellion -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Hellion">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Hippo -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Hippo">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Hippogriff -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Hippogriff">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Homarid -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Homarid">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Homunculus -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Homunculus">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Horror -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Horror">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Horse -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Horse">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Hound -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Hound">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Human -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Human">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Hydra -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Hydra">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Hyena -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Hyena">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Illusion -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Illusion">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Imp -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Imp">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Incarnation -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Incarnation">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Insect -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Insect">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Instant -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Instant">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Island -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Island">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Jackal -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Jackal">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Jellyfish -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Jellyfish">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Juggernaut -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Juggernaut">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Kavu -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Kavu">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Kirin -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Kirin">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Kithkin -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Kithkin">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Knight -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Knight">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Kobold -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Kobold">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Kor -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Kor">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Kraken -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Kraken">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Lair -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Lair">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Lamia -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Lamia">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Lammasu -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Lammasu">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Land -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Land">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Leech -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Leech">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Leviathan -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Leviathan">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Lhurgoyf -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Lhurgoyf">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Licid -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Licid">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Lizard -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Lizard">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Locus -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Locus">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Manticore -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Manticore">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Masticore -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Masticore">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Mercenary -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mercenary">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Merfolk -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Merfolk">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Metathran -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Metathran">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Mine -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mine">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Minion -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Minion">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Minotaur -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Minotaur">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Mole -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mole">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Monger -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Monger">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Mongoose -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mongoose">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Monk -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Monk">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Monkey -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Monkey">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Moonfolk -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Moonfolk">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Mountain -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mountain">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Mutant -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mutant">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Myr -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Myr">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Mystic -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mystic">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Naga -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Naga">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Nautilus -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Nautilus">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Nephilim -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Nephilim">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Nightmare -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Nightmare">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Nightstalker -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Nightstalker">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ninja -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ninja">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Noggle -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Noggle">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Nomad -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Nomad">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Nymph -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Nymph">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Octopus -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Octopus">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ogre -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ogre">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ooze -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ooze">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Orb -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Orb">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Orc -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Orc">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Orgg -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Orgg">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ouphe -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ouphe">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Ox -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ox">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Oyster -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Oyster">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Pangolin -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pangolin">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Pegasus -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pegasus">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Pentavite -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pentavite">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Pest -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pest">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Phelddagrif -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Phelddagrif">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Phoenix -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Phoenix">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Pilot -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pilot">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Pincher -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pincher">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Pirate -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pirate">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Plains -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Plains">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Plant -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Plant">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Power-Plant -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Power-Plant">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Praetor -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Praetor">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Prism -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Prism">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Processor -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Processor">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Rabbit -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Rabbit">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Rat -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Rat">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Rebel -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Rebel">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Reflection -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Reflection">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Rhino -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Rhino">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Rigger -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Rigger">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Rogue -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Rogue">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Sable -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Sable">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Saga -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Saga">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Enchantment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Salamander -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Salamander">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Samurai -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Samurai">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Sand -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Sand">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Saproling -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Saproling">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Satyr -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Satyr">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Scarecrow -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Scarecrow">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Scion -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Scion">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Scorpion -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Scorpion">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Scout -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Scout">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Serf -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Serf">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Serpent -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Serpent">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Servo -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Servo">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Shade -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Shade">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Shaman -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Shaman">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Shapeshifter -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Shapeshifter">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Sheep -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Sheep">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Shrine -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Shrine">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Enchantment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Siren -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Siren">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Skeleton -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Skeleton">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Slith -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Slith">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Sliver -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Sliver">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Slug -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Slug">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Snake -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Snake">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Soldier -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Soldier">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Soltari -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Soltari">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Sorcery -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Sorcery">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Spawn -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Spawn">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Specter -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Specter">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Spell -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Spell">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Spellshaper -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Spellshaper">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Sphinx -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Sphinx">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Spider -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Spider">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Spike -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Spike">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Spirit -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Spirit">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Splinter -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Splinter">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Sponge -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Sponge">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Squid -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Squid">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Squirrel -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Squirrel">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Starfish -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Starfish">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Surrakar -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Surrakar">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Survivor -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Survivor">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Swamp -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Swamp">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Tetravite -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Tetravite">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Thalakos -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Thalakos">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Thopter -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Thopter">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Thrull -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Thrull">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Tower -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Tower">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Trap -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Trap">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Treasure -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Treasure">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Treefolk -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Treefolk">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Trilobite -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Trilobite">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Triskelavite -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Triskelavite">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Troll -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Troll">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Turtle -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Turtle">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Unicorn -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Unicorn">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Urzas -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Urzas">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Vampire -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Vampire">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Vedalken -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Vedalken">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Vehicle -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Viashino -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Viashino">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Volver -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Volver">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Wall -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Wall">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Warrior -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Warrior">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Weird -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Weird">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Werewolf -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Werewolf">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Whale -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Whale">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Wizard -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Wizard">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Wolf -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Wolf">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Wolverine -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Wolverine">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Wombat -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Wombat">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Worm -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Worm">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Wraith -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Wraith">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Wurm -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Wurm">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Yeti -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Yeti">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Zombie -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Zombie">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Zubera -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Zubera">
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#126211 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#126211">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+        <abilities>Fortified land has indestructible.Whenever fortified land becomes tapped, target creature gets +1/+1 until end of turn.Fortify 3 (3: Attach to target land you control. Fortify only as a sorcery. This card enters the battlefield unattached and stays on the battlefield if the land leaves.)</abilities>
+        <card_name>Darksteel Garrison</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</colorless>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=126211"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#12944 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#12944">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Enchantment"/>
+        <abilities>As Engineered Plague enters the battlefield, choose a creature type. All creatures of the chosen type get -1/-1.</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</black>
+        <card_name>Engineered Plague</card_name>
+        <flavor>&quot;The admixture of bitterwort in the viral brew has produced most favorable results.&quot;</flavor>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=12944"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#150498 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#150498">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
+        <abilities>All creatures of the chosen type get -1/-1.</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</black>
+        <card_name>Terror</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=150498"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#150663 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#150663">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+        <abilities>Wastes deals 1 damage to you</abilities>
+        <card_name>Adarkar Wastes</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=150663"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#158969 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#158969">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Plains"/>
+        <card_name>Plains</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=158969"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#165565 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#165565">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+        <abilities>Star Compass enters the battlefield tapped. Tap: Add one mana of any color that a basic land you control could produce.</abilities>
+        <card_name>Star Compass</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</colorless>
+        <flavor>No apunta hacia el norte. Apunta hacia el hogar.</flavor>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=165565"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#202437 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#202437">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
+        <abilities>Counter target spell</abilities>
+        <blue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</blue>
+        <card_name>Counterspell</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=202437"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#22318 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#22318">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+        <abilities>Tap all other artifacts. They do not untap during their controllers untap steps for as long as Kill Switch remains tapped.</abilities>
+        <card_name>Kill switch</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=22318"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#23040 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#23040">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Minion"/>
+        <abilities>Whenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can not be regenerated.</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</black>
+        <card_name>Phirexian Slayer</card_name>
+        <flavor>Whenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can not be regenerated.</flavor>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=23040"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#260729 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#260729">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Avatar"/>
+        <abilities>If there are ten or more creature cards total in all graveyards, this spell costs 6 less to cast. Fear (This creature can not be blocked except by artifact creatures and/or black creatures.)Tap: Destroy target creature. It can not be regenerated.</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</black>
+        <card_name>Avatar of Woe</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=260729"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#260766 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#260766">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Avatar"/>
+        <abilities>If an opponent controls seven or more lands, this spell costs 6 less to cast. Flying Red: Avatar of Fury gets +1/+0 until end of turn</abilities>
+        <card_name>Avatar of Fury</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</power>
+        <red rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</red>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=260766"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#265091 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#265091">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Equipment"/>
+        <abilities>Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer. Equip 5 (5: Attach to target creature you control. Equip only as a sorcery.)</abilities>
+        <card_name>Worldslayer</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</colorless>
+        <flavor>&quot;Si eso es lo que buscas, intenta en los cráteres.&quot; —Fodrus, maestro herrero</flavor>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=265091"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#370232 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#370232">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Plant"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Skeleton"/>
+        <abilities>Rot Farm Skeleton can not block. 2BlackGreen, Put the top four cards of your library into your graveyard: Return Rot Farm Skeleton from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery.</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</black>
+        <card_name>Rot Farm Skeleton</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=370232"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#378372 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#378372">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Sorcery"/>
+        <abilities>Destroy all creatures. They can not be regenerated.</abilities>
+        <card_name>Wrath of God</card_name>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</white>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=378372"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#383058 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#383058">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Angel"/>
+        <abilities>Flying, vigilance Radiant, Archangel gets +1/+1 for each other creature with flying on the battlefield.</abilities>
+        <card_name>Radiant, Archangel</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</toughness>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</white>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=383058"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#391664 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#391664">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Druid"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Elf"/>
+        <abilities>Titania recompensa a aquellos que honran al bosque convirtiéndolos en una parte viviente del mismo.</abilities>
+        <card_name>Priest of Titania</card_name>
+        <green rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</green>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=391664"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#423359 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#423359">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+        <abilities>Caves of Koilos deals 1 damage to you.</abilities>
+        <card_name>Caives of Koilos</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=423359"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#430355 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#430355">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Druid"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Elf"/>
+        <abilities>Titania rewards all who honor the forest by making them a living part of it.</abilities>
+        <card_name>Priest of Titania</card_name>
+        <green rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</green>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=430355"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#443459 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#443459">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Angel"/>
+        <abilities>Flying, vigilance</abilities>
+        <card_name>Serra Angel</card_name>
+        <flavor>El ángel recuerda sus vidas pasadas como si fueran sueños. Su canción sostenía las praderas; su espada hacía retroceder a la oscuridad; sus alas la transportaron a través de los siglos.</flavor>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</toughness>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</white>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=443459"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#447132 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#447132">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
+        <abilities>Counter target spell.</abilities>
+        <blue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</blue>
+        <card_name>Counterspell</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=447132"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#447191 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#447191">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Human"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Wizard"/>
+        <abilities>When Exclusion Mage enters the battlefield, return target creature an opponent controls to its owner-s hand.</abilities>
+        <blue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</blue>
+        <card_name>Exclusion Mage</card_name>
+        <flavor>Successful battles start with knowing who is worth fighting.</flavor>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=447191"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#456536 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#456536">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Angel"/>
+        <abilities>Flying, vigilance</abilities>
+        <card_name>Serra Angel</card_name>
+        <flavor>The angel remembers her past lives like dreams. Her song held up meadows. Her blade drove back darkness. Her wings carried her across the ages.</flavor>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</toughness>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</white>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=456536"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#464024 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#464024">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Artificer"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Human"/>
+        <abilities>When Urza, Lord High Artificer enters the battlefield, create a 0/0 colorless Construct artifact creature token with &quot;This creature gets +1/+1 for each artifact you control.&quot; Tap an untapped artifact you control: Add Blue. 5: Shuffle your library, then exile the top card. Until end of turn, you may play that card without paying its mana cost.</abilities>
+        <blue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</blue>
+        <card_name>Urza, Lord High Artificer</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=464024"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#464065 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#464065">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Cleric"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Human"/>
+        <abilities>Protection from Humans Pay 1 life, Sacrifice another creature: Put a -1/-1 counter on up to one target creature and draw a card</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</black>
+        <card_name>Yawgmoth, Thran Physician</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=464065"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#464465 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#464465">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
+        <abilities>Enchant creature Enchanted creature gets +2/+2.As long as another Aura is attached to enchanted creature, it has first strike and lifelink.</abilities>
+        <card_name>Face of Divinity</card_name>
+        <flavor>Las almas puras relucen como el amanecer.</flavor>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</white>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=464465"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#464482 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#464482">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Angel"/>
+        <abilities>Cuando Worzel invocó a los ángeles de Segovia para luchar contra los mosquitos de Gargantikari de Thomil, la batalla que sucedió se cuenta entre las menos destructivas del Multiverso.</abilities>
+        <card_name>Segovian Angel</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</toughness>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</white>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=464482"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#464573 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#464573">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Cleric"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Human"/>
+        <abilities>Protection from Humans Pay 1 life, Sacrifice another creature: Put a -1/-1 counter on up to one target creature and draw a card.</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</black>
+        <card_name>Yawgmoth, Thran Physician</card_name>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=464573"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#464682 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#464682">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Masticore"/>
+        <abilities>As an additional cost to cast this spell, discard a card. 4: Lesser Masticore deals 1 damage to target creature.</abilities>
+        <card_name>Lesser Masticore</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</colorless>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=464682"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#466855 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#466855">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Thrull"/>
+        <abilities>Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)</abilities>
+        <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</black>
+        <card_name>Feral Abomination</card_name>
+        <flavor>&quot;If you manage to get to the heart of the bog, you will find things there that make zombies seem downright lovable.&quot;</flavor>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</toughness>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=466855"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#473758 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#473758">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Swamp"/>
+        <card_name>Swamp</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=473758"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#473762 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#473762">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Mountain"/>
+        <card_name>Mountain</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=473762"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#476129 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#476129">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Forest"/>
+        <card_name>Forest</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=476129"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#87129 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#87129">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Island"/>
+        <card_name>Island</card_name>
+        <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=87129"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
 
 
 
