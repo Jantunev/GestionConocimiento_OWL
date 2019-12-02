@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://pucp.edu.pe/mtg.owl#"/>
     
@@ -885,14 +886,6 @@
     
 
 
-    <!-- http://pucp.edu.pe/mtg.owl#Forest -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Forest">
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
-    </owl:Class>
-    
-
-
     <!-- http://pucp.edu.pe/mtg.owl#Fortification -->
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Fortification">
@@ -1169,14 +1162,6 @@
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Instant">
         <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Spell"/>
-    </owl:Class>
-    
-
-
-    <!-- http://pucp.edu.pe/mtg.owl#Island -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Island">
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
     </owl:Class>
     
 
@@ -1459,14 +1444,6 @@
     
 
 
-    <!-- http://pucp.edu.pe/mtg.owl#Mountain -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mountain">
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
-    </owl:Class>
-    
-
-
     <!-- http://pucp.edu.pe/mtg.owl#Mutant -->
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Mutant">
@@ -1703,14 +1680,6 @@
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Pirate">
         <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
-    </owl:Class>
-    
-
-
-    <!-- http://pucp.edu.pe/mtg.owl#Plains -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Plains">
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
     </owl:Class>
     
 
@@ -2155,14 +2124,6 @@
     
 
 
-    <!-- http://pucp.edu.pe/mtg.owl#Swamp -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Swamp">
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
-    </owl:Class>
-    
-
-
     <!-- http://pucp.edu.pe/mtg.owl#Tetravite -->
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Tetravite">
@@ -2497,7 +2458,6 @@
     <!-- http://pucp.edu.pe/mtg.owl#158969 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#158969">
-        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Plains"/>
         <card_name>Plains</card_name>
         <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=158969"/>
     </owl:NamedIndividual>
@@ -2840,7 +2800,7 @@
     <!-- http://pucp.edu.pe/mtg.owl#473758 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#473758">
-        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Swamp"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
         <card_name>Swamp</card_name>
         <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=473758"/>
     </owl:NamedIndividual>
@@ -2850,7 +2810,7 @@
     <!-- http://pucp.edu.pe/mtg.owl#473762 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#473762">
-        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Mountain"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
         <card_name>Mountain</card_name>
         <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=473762"/>
     </owl:NamedIndividual>
@@ -2860,7 +2820,7 @@
     <!-- http://pucp.edu.pe/mtg.owl#476129 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#476129">
-        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Forest"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
         <card_name>Forest</card_name>
         <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=476129"/>
     </owl:NamedIndividual>
@@ -2870,7 +2830,7 @@
     <!-- http://pucp.edu.pe/mtg.owl#87129 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#87129">
-        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Island"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Basic"/>
         <card_name>Island</card_name>
         <cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=87129"/>
     </owl:NamedIndividual>
