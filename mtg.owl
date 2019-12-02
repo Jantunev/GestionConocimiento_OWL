@@ -45,6 +45,7 @@
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#enchant">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#isEnchantedBy"/>
         <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
         <rdfs:range rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
     </owl:ObjectProperty>
@@ -54,6 +55,7 @@
     <!-- http://pucp.edu.pe/mtg.owl#equip -->
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#equip">
+        <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#isEquipedBy"/>
         <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Equipment"/>
         <rdfs:range rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
     </owl:ObjectProperty>
@@ -63,8 +65,33 @@
     <!-- http://pucp.edu.pe/mtg.owl#fortify -->
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#fortify">
+        <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#isFortifiedBy"/>
         <rdfs:domain rdf:resource="http://pucp.edu.pe/mtg.owl#Fortification"/>
         <rdfs:range rdf:resource="http://pucp.edu.pe/mtg.owl#Land"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#isEnchantedBy -->
+
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isEnchantedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#isEquipedBy -->
+
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isEquipedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#isFortifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isFortifiedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
