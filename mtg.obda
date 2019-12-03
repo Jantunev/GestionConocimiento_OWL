@@ -1,13 +1,13 @@
 [PrefixDeclaration]
 :		http://pucp.edu.pe/mtg.owl#
-ns1:		http://pucp.edu.pe/mtg.owl#
-ns2:		http://www.w3.org/2001/
+mtg:		http://pucp.edu.pe/mtg.owl#
 owl:		http://www.w3.org/2002/07/owl#
 rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
 xml:		http://www.w3.org/XML/1998/namespace
 xsd:		http://www.w3.org/2001/XMLSchema#
 obda:		https://w3id.org/obda/vocabulary#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
+multiverseid:	https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#
 
 [MappingDeclaration] @collection [[
 ]]
