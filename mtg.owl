@@ -45,6 +45,8 @@
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#IsequipedBy">
         <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#equip"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -53,13 +55,18 @@
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#enchant">
         <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#isEnchantedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://pucp.edu.pe/mtg.owl#equip -->
 
-    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#equip"/>
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#equip">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -67,13 +74,18 @@
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#fortify">
         <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#isFortifiedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://pucp.edu.pe/mtg.owl#isEnchantedBy -->
 
-    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isEnchantedBy"/>
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isEnchantedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -81,6 +93,8 @@
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isFortifiedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -220,16 +234,6 @@
     
 
 
-    <!-- http://pucp.edu.pe/mtg.owl#Adventure -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Adventure">
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Sorcery"/>
-        <owl:disjointWith rdf:resource="http://pucp.edu.pe/mtg.owl#Arcane"/>
-    </owl:Class>
-    
-
-
     <!-- http://pucp.edu.pe/mtg.owl#Advisor -->
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Advisor">
@@ -274,15 +278,6 @@
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Ape">
         <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Creature"/>
-    </owl:Class>
-    
-
-
-    <!-- http://pucp.edu.pe/mtg.owl#Arcane -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Arcane">
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Instant"/>
-        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#Sorcery"/>
     </owl:Class>
     
 
@@ -1798,6 +1793,37 @@
     
 
 
+    <!-- http://pucp.edu.pe/mtg.owl#Query1 -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Query1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Creature"/>
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Query3 -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Query3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Creature"/>
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#White"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://pucp.edu.pe/mtg.owl#Rabbit -->
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Rabbit">
@@ -2494,6 +2520,48 @@
     
 
 
+    <!-- https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query2 -->
+
+    <owl:Class rdf:about="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#White"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query4 -->
+
+    <owl:Class rdf:about="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query4">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://pucp.edu.pe/mtg.owl#power"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2626,6 +2694,7 @@
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#260729">
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Avatar"/>
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Black"/>
+        <IsequipedBy rdf:resource="http://pucp.edu.pe/mtg.owl#265091"/>
         <abilities>If there are ten or more creature cards total in all graveyards, this spell costs 6 less to cast. Fear (This creature can not be blocked except by artifact creatures and/or black creatures.)Tap: Destroy target creature. It can not be regenerated.</abilities>
         <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</black>
         <card_name>Avatar of Woe</card_name>
@@ -2828,8 +2897,6 @@
         <abilities>Enchant creature Enchanted creature gets +2/+2.As long as another Aura is attached to enchanted creature, it has first strike and lifelink.</abilities>
         <card_name>Face of Divinity</card_name>
         <flavor>Las almas puras relucen como el amanecer.</flavor>
-        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</power>
-        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</toughness>
         <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</white>
         <multiverseid:cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=464465"/>
     </owl:NamedIndividual>
@@ -2934,14 +3001,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Adventure"/>
-            <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Arcane"/>
-            <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Trap"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
