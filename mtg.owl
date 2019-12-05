@@ -1799,8 +1799,37 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Creature"/>
                     <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Spell"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Black"/>
+                                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Green"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Green"/>
+                                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#White"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://pucp.edu.pe/mtg.owl#colorless"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
