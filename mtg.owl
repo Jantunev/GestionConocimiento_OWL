@@ -1870,22 +1870,6 @@
     
 
 
-    <!-- http://pucp.edu.pe/mtg.owl#Query3 -->
-
-    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Query3">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Creature"/>
-                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
-                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#White"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://pucp.edu.pe/mtg.owl#Query5 -->
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Query5">
@@ -1922,7 +1906,7 @@
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxExclusive>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
