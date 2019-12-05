@@ -41,16 +41,6 @@
     
 
 
-    <!-- http://pucp.edu.pe/mtg.owl#IsequipedBy -->
-
-    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#IsequipedBy">
-        <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#equip"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://pucp.edu.pe/mtg.owl#enchant -->
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#enchant">
@@ -64,6 +54,7 @@
     <!-- http://pucp.edu.pe/mtg.owl#equip -->
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#equip">
+        <owl:inverseOf rdf:resource="http://pucp.edu.pe/mtg.owl#isEquipedBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </owl:ObjectProperty>
@@ -83,6 +74,15 @@
     <!-- http://pucp.edu.pe/mtg.owl#isEnchantedBy -->
 
     <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isEnchantedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#isEquipedBy -->
+
+    <owl:ObjectProperty rdf:about="http://pucp.edu.pe/mtg.owl#isEquipedBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </owl:ObjectProperty>
@@ -1808,6 +1808,39 @@
     
 
 
+    <!-- http://pucp.edu.pe/mtg.owl#Query2 -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Query2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Creature"/>
+                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://pucp.edu.pe/mtg.owl#isEnchantedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://pucp.edu.pe/mtg.owl#isEquipedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Black"/>
+                            <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#White"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://pucp.edu.pe/mtg.owl#Query3 -->
 
     <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Query3">
@@ -1820,6 +1853,56 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#Query5 -->
+
+    <owl:Class rdf:about="http://pucp.edu.pe/mtg.owl#Query5">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#Creature"/>
+                            <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://pucp.edu.pe/mtg.owl#isEnchantedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://pucp.edu.pe/mtg.owl#toughness"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://pucp.edu.pe/mtg.owl#green"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
     </owl:Class>
     
 
@@ -2520,21 +2603,6 @@
     
 
 
-    <!-- https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query2 -->
-
-    <owl:Class rdf:about="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query2">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#MagicTheGathering_Objects"/>
-                    <rdf:Description rdf:about="http://pucp.edu.pe/mtg.owl#White"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query4 -->
 
     <owl:Class rdf:about="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=#Query4">
@@ -2600,6 +2668,16 @@
     
 
 
+    <!-- http://pucp.edu.pe/mtg.owl#139511 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#139511">
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soaring Hope</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</colorless>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</white>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://pucp.edu.pe/mtg.owl#150498 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#150498">
@@ -2649,6 +2727,28 @@
     
 
 
+    <!-- http://pucp.edu.pe/mtg.owl#193551 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#193551">
+        <abilities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This spell costs Green less to cast for each green creature you control.</abilities>
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khalni Hydra</card_name>
+        <green rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</green>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</toughness>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#198524 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#198524">
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celestial Mantle</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</colorless>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</white>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://pucp.edu.pe/mtg.owl#202437 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#202437">
@@ -2678,6 +2778,7 @@
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#23040">
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Black"/>
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Minion"/>
+        <isEnchantedBy rdf:resource="http://pucp.edu.pe/mtg.owl#383394"/>
         <abilities>Whenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can not be regenerated.</abilities>
         <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</black>
         <card_name>Phirexian Slayer</card_name>
@@ -2694,7 +2795,7 @@
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#260729">
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Avatar"/>
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Black"/>
-        <IsequipedBy rdf:resource="http://pucp.edu.pe/mtg.owl#265091"/>
+        <isEquipedBy rdf:resource="http://pucp.edu.pe/mtg.owl#265091"/>
         <abilities>If there are ten or more creature cards total in all graveyards, this spell costs 6 less to cast. Fear (This creature can not be blocked except by artifact creatures and/or black creatures.)Tap: Destroy target creature. It can not be regenerated.</abilities>
         <black rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</black>
         <card_name>Avatar of Woe</card_name>
@@ -2710,6 +2811,7 @@
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#260766">
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Avatar"/>
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Red"/>
+        <isEquipedBy rdf:resource="http://pucp.edu.pe/mtg.owl#265091"/>
         <abilities>If an opponent controls seven or more lands, this spell costs 6 less to cast. Flying Red: Avatar of Fury gets +1/+0 until end of turn</abilities>
         <card_name>Avatar of Fury</card_name>
         <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</power>
@@ -2765,6 +2867,16 @@
     
 
 
+    <!-- http://pucp.edu.pe/mtg.owl#383394 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#383394">
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectra Ward</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</colorless>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</white>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://pucp.edu.pe/mtg.owl#391664 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#391664">
@@ -2796,6 +2908,20 @@
     
 
 
+    <!-- http://pucp.edu.pe/mtg.owl#413737 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#413737">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Green"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#White"/>
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Armadillo Cloak</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</colorless>
+        <green rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</green>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</white>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://pucp.edu.pe/mtg.owl#423359 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#423359">
@@ -2808,11 +2934,41 @@
     
 
 
+    <!-- http://pucp.edu.pe/mtg.owl#423437 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#423437">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#White"/>
+        <enchant rdf:resource="http://pucp.edu.pe/mtg.owl#430247"/>
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spirit Mantle</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</colorless>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</white>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#430247 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#430247">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Angel"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#White"/>
+        <isEnchantedBy rdf:resource="http://pucp.edu.pe/mtg.owl#423437"/>
+        <isEquipedBy rdf:resource="http://pucp.edu.pe/mtg.owl#265091"/>
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voice of All</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</colorless>
+        <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</power>
+        <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</toughness>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</white>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://pucp.edu.pe/mtg.owl#443459 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#443459">
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Angel"/>
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#White"/>
+        <isEnchantedBy rdf:resource="http://pucp.edu.pe/mtg.owl#383394"/>
         <abilities>flying,vigilance</abilities>
         <card_name>Segovian Angel</card_name>
         <flavor>El ángel recuerda sus vidas pasadas como si fueran sueños. Su canción sostenía las praderas; su espada hacía retroceder a la oscuridad; sus alas la transportaron a través de los siglos.</flavor>
@@ -2853,6 +3009,20 @@
         <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</toughness>
         <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</white>
         <multiverseid:cardReference rdf:resource="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=456536"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pucp.edu.pe/mtg.owl#463972 -->
+
+    <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#463972">
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Aura"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#White"/>
+        <enchant rdf:resource="http://pucp.edu.pe/mtg.owl#447191"/>
+        <enchant rdf:resource="http://pucp.edu.pe/mtg.owl#456536"/>
+        <card_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reprobation</card_name>
+        <colorless rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</colorless>
+        <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</white>
     </owl:NamedIndividual>
     
 
@@ -2909,7 +3079,7 @@
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Angel"/>
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#White"/>
         <abilities>Cuando Worzel invocó a los ángeles de Segovia para luchar contra los mosquitos de Gargantikari de Thomil, la batalla que sucedió se cuenta entre las menos destructivas del Multiverso.</abilities>
-        <card_name>Segovian Angel</card_name>
+        <card_name>Serra Zealot</card_name>
         <power rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</power>
         <toughness rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</toughness>
         <white rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</white>
