@@ -3104,7 +3104,7 @@
     <!-- http://pucp.edu.pe/mtg.owl#464682 -->
 
     <owl:NamedIndividual rdf:about="http://pucp.edu.pe/mtg.owl#464682">
-        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Black"/>
+        <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Artifact"/>
         <rdf:type rdf:resource="http://pucp.edu.pe/mtg.owl#Masticore"/>
         <abilities>As an additional cost to cast this spell, discard a card. 4: Lesser Masticore deals 1 damage to target creature.</abilities>
         <card_name>Lesser Masticore</card_name>
